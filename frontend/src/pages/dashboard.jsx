@@ -59,7 +59,7 @@ const Dashboard = () => {
           expense: data?.totalExpense,
         }}
       />
-      <div className="flex flex-col-reverse items-center gap-10 w-ful md:flex-row ">
+      <div className="flex flex-col-reverse items-center gap-10 w-full lg:flex-row ">
         <Chart data={data?.chartData} />
         {data?.totalIncome > 0 && (
           <DoughnutChart

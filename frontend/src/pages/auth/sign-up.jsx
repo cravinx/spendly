@@ -43,7 +43,7 @@ const SignUp = () => {
     const [loading, setLoading] = useState(false)
 
     useEffect(() => {
-        user && navigate("/")
+        user && navigate("/overview")
     }, [user]);
     const onSubmit = async (data) => {
         try {
@@ -99,7 +99,7 @@ const SignUp = () => {
                                   error={errors?.firstName?.message}
                                   
                                   {...register("firstName")}
-                                  className="text-sm border dark:border-gray-800 dark:bg-transparent dark:placeholder:text-gray dark:text-gray-700 dark:outline-none"
+                                  className="text-sm border dark:border-gray-800 dark:bg-transparent dark:placeholder:text-gray dark:text-white  dark:outline-none"
                               />
                               <Input
                                   disabled={loading}
@@ -112,7 +112,7 @@ const SignUp = () => {
                                   error={errors?.lastName?.message}
                                   
                                   {...register("lastName")}
-                                  className="text-sm border dark:border-gray-800 dark:bg-transparent dark:placeholder:text-gray dark:text-gray-700 dark:outline-none"
+                                  className="text-sm border dark:border-gray-800 dark:bg-transparent dark:placeholder:text-gray dark:text-white  dark:outline-none"
                               />
                               <Input
                                   disabled={loading}
@@ -125,7 +125,7 @@ const SignUp = () => {
                                   error={errors?.firstName?.message}
                                   
                                   {...register("email")}
-                                  className="text-sm border dark:border-gray-800 dark:bg-transparent dark:placeholder:text-gray dark:text-gray-700 dark:outline-none"
+                                  className="text-sm border dark:border-gray-800 dark:bg-transparent dark:placeholder:text-gray dark:text-white  dark:outline-none"
                               />
                               <Input
                                   disabled={loading}
@@ -138,7 +138,7 @@ const SignUp = () => {
                                   error={errors?.firstName?.message}
                                   
                                   {...register("password")}
-                                  className="text-sm border dark:border-gray-800 dark:bg-transparent dark:placeholder:text-gray dark:text-gray-700 dark:outline-none"
+                                  className="text-sm border dark:border-gray-800 dark:bg-transparent dark:placeholder:text-gray dark:text-white  dark:outline-none"
                               />
                           </div>
 

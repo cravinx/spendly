@@ -19,7 +19,7 @@ const RootLayout = () => {
   ) : (
     <>
       <Navbar />
-      <div className="min-h-[cal(h-screen-100px)] md:px-20 px-6 relative">
+      <div className="min-h-[cal(h-screen-100px)] lg:px-10 px-6 relative">
         <Outlet />
       </div>
     </>

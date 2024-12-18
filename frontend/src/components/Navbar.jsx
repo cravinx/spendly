@@ -79,8 +79,8 @@ const UserMenu = () => {
               </div>
 
               <div className="w-full">
-                <p className="text-violet-700">{user?.firstname}</p>
-                <span className="text-xs overflow-ellipsis">
+                <p className="text-violet-700 dark:text-white">{user?.firstname}</p>
+                <span className="text-xs dark:text-gray-400 overflow-ellipsis">
                   {user?.country}
                 </span>
               </div>
@@ -193,12 +193,12 @@ const Navbar = () => {
             <RiCurrencyFill className="text-3xl text-white hover:animate-spin" />
           </div>
           <span className="text-xl font-bold text-black dark:text-white">
-            My-Finance
+            Spendly
           </span>
         </div>
       </Link>
 
-      <div className="items-center hidden gap-4 xl:flex">
+      <div className="items-center hidden gap-4 lg:flex">
         {links.map(({ label, link }, index) => (
           <div
             key={index}
@@ -213,13 +213,13 @@ const Navbar = () => {
         ))}
       </div>
 
-      <div className="items-center hidden gap-10 xl:flex 2xl:gap-20">
+      <div className="items-center hidden gap-10 lg:flex 2xl:gap-20">
         <ThemeSwitch />
 
         <UserMenu />
       </div>
 
-      <div className="flex xl:hidden">
+      <div className="flex lg:hidden">
         <MobileSidebar />
       </div>
     </div>

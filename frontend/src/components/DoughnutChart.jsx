@@ -18,7 +18,7 @@ const DoughnutChart = ({ dt }) => {
   ];
 
   return (
-    <div className='w-full md:w-1/3 flex flex-col items-center bg-gray-50 dark:bg-transparent'>
+    <div className='w-full lg:w-[39%] flex flex-col items-center bg-gray-50 dark:bg-transparent'>
       <Title title='Summary' />
       <ResponsiveContainer width={"100%"} height={410}>
         <PieChart width={400} height={400}>

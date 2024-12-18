@@ -1,11 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { RiCurrencyFill } from "react-icons/ri";
 import ThemeSwitch from "./ThemeSwitch";
-import {BackgroundImage} from '../assets';
+import { BackgroundImage } from '../assets';
+import useStore from "../store";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const [darkMode, setDarkMode] = useState(false);
+  const navigate = useNavigate()
+  const { user, setCredentials } = useStore(state => state)
+
+  useEffect(() => {
+    user && navigate("/overview")
+}, [user]);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -14,7 +22,7 @@ const Hero = () => {
 
   return (
     <div
-      className={`min-h-screen flex flex-col items-center justify-center bg-violet-100 dark:bg-violet-900 transition-colors duration-300 bg-cover bg-blend-overlay`}
+      className={`min-h-screen flex flex-col items-center justify-center bg-violet-100 dark:bg-violet-900 transition-colors duration-300 bg-bottom md:bg-center bg-cover bg-blend-overlay`}
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
       {/* Top Bar */}
