@@ -1,6 +1,6 @@
 import AccountMenu from "./AccountDialog";
 import Accounts from "./Accounts";
-import Button from "./button";
+import Button from "./Button";
 import ChangePassword from "./ChangePassword";
 import { Chart } from "./Chart";
 import DateRange from "./DateRange";
