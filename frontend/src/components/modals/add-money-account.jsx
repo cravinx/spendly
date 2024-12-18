@@ -6,8 +6,8 @@ import { BiLoader } from "react-icons/bi";
 
 import { formatCurrency } from "../../libs";
 import api from "../../libs/apiCall";
-import Button from "../button";
-import InputField from "../textfield";
+import Button from "../Button";
+import InputField from "../TextField";
 import DialogWrapper from "../wrappers/DialogWrapper";
 
 const AddMoney = ({ isOpen, setIsOpen, id, refetch }) => {

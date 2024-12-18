@@ -5,7 +5,7 @@ import { RiVisaLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 import { formatCurrency, maskAccountNumber } from "../libs";
-import Title from "./title";
+import Title from "./Title";
 
 const ICONS = {
   crypto: (

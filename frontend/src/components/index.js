@@ -17,8 +17,8 @@ import RecentTransactions from "./RecentTransactions";
 import SettingsForm from "./SettingForm";
 import Stats from "./Stats";
 import ThemeSwitch from "./ThemeSwitch";
-import InputField from "./textfield";
-import Title from "./title";
+import InputField from "./TextField";
+import Title from "./Title";
 import DialogWrapper from "./wrappers/DialogWrapper";
 import TransitionWrapper from "./wrappers/TransitionWrapper";
 

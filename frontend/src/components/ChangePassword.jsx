@@ -4,8 +4,8 @@ import { toast } from "sonner";
 import { BiLoader } from "react-icons/bi"
 
 import api from "../libs/apiCall";
-import Button from "./button";
-import InputField from "./textfield";
+import Button from "./Button";
+import InputField from "./TextField";
 
 const ChangePassword = () => {
   const {
