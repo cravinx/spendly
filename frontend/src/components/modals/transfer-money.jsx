@@ -5,8 +5,8 @@ import { MdOutlineWarning } from "react-icons/md";
 import { toast } from "sonner";
 import { BiLoader } from "react-icons/bi";
 
-import Button from "../button";
-import InputField from "../textfield";
+import Button from "../Button";
+import InputField from "../TextField";
 import DialogWrapper from "../wrappers/DialogWrapper";
 import { formatCurrency } from "../../libs";
 import api from "../../libs/apiCall";

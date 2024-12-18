@@ -7,7 +7,7 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from "recharts";
-import Title from "./title";
+import Title from "./Title";
 
 const COLORS = ["#0088FE", "#FFBB28", "#FF8042", "#00C49F"];
 

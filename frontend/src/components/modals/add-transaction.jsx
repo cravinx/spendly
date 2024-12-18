@@ -8,9 +8,9 @@ import { BiLoader } from "react-icons/bi";
 import { formatCurrency } from "../../libs";
 import api from "../../libs/apiCall";
 import useStore from "../../store";
-import Button from "../button";
+import Button from "../Button";
 import Loading from "../Loading";
-import InputField from "../textfield";
+import InputField from "../TextField";
 import DialogWrapper from "../wrappers/DialogWrapper";
 
 const AddTransaction = ({ isOpen, setIsOpen, refetch }) => {

@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '../../components/Card'
 import { Seperator } from '../../components/Seperator'
 import Input from '../../components/Input'
-import Button from '../../components/button'
+import Button from '../../components/Button'
 import { BiLoader } from "react-icons/bi"
 import { SocialAuth } from '../../components/SocialAuth'
 import api from '../../libs/apiCall'
