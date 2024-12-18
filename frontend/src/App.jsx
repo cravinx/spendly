@@ -19,7 +19,7 @@ const RootLayout = () => {
   ) : (
     <>
       <Navbar />
-      <div className="min-h-[cal(h-screen-100px)] md:px-20 px-6">
+      <div className="min-h-[cal(h-screen-100px)] md:px-20 px-6 relative">
         <Outlet />
       </div>
     </>
@@ -39,7 +39,7 @@ const App = () => {
 
   return (
     <main>
-      <div className="w-full min-h-screen bg-gray-100  dark:bg-slate-900 overflow-x-hidden">
+      <div className="w-full min-h-screen bg-gray-100  dark:bg-slate-900">
         <Routes>
         <Route path="/" element={<Hero />} />
           <Route element={<RootLayout />}>

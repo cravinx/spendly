@@ -10,7 +10,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
     <div
       className={`${
         showMenu ? "right-0" : "-right-[100%]"
-      } fixed bottom-0 top-20 z-20 flex h-screen w-[40%] flex-col justify-between bg-white dark:bg-slate-800 dark:text-white px-2 pb-6 pt-5 text-black transition-all duration-200 md:hidden rounded-l-xl shadow-md`}
+      } fixed bottom-0 top-20 z-20 flex h-screen w-[60%] md:w-[40%] flex-col justify-between bg-white dark:bg-slate-800 dark:text-white px-5 md:px-2 pb-6 pt-5 text-black transition-all duration-200 md:hidden rounded-l-xl shadow-md`}
     >
       <div className="card">
         <div className="flex flex-col items-start justify-center gap-3">
@@ -36,11 +36,6 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
             ))}
           </ul>
         </nav>
-      </div>
-      <div className="footer">
-        <h1>
-          Made with ❤ @ <a href="https://anysite.com/">anysite</a>{" "}
-        </h1>
       </div>
     </div>
   );

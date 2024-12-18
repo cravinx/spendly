@@ -61,7 +61,7 @@ const Stats = ({ dt }) => {
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-between gap-8 2xl:gap-40 mb-20">
-      <div className="flex flex-col w-full md:flex-row items-center justify-between gap-10 2xl:gap-20">
+      <div className="flex flex-col w-full xl:flex-row items-center justify-between gap-10 2xl:gap-20">
         {data.map((item, index) => (
           <ItemCard key={index} item={item} index={index} />
         ))}
