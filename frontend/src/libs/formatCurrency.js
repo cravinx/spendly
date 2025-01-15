@@ -42,8 +42,10 @@ export async function fetchCountries() {
     try {
         const response = await fetch("https://restcountries.com/v3.1/all");
         const data = await response.json();
-
+       
         if (response.ok) {
+            console.log("data", data)
+
             const countries = data.map((country) => {
                 const currencies = country.currencies || {};
                 const currencyCode = Object.keys(currencies)[0];

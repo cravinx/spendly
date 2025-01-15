@@ -15,8 +15,8 @@ import {
   import { fetchCountries } from "../libs";
   import api from "../libs/apiCall";
   import useStore from "../store";
-  import Button from "./button";
-import InputField from "./textfield"
+  import Button from "./Button";
+import InputField from "./TextField"
 import { BiLoader } from "react-icons/bi"
   
   const SettingForm = () => {
